@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "lawyerId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lawyerFullName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lawyerPhoneNumber",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "pattern"
+            ],
+            "fieldValidateRulesPattern": "[0-9\\-\\+]+"
+        }
+    ],
+    "changelogDate": "20200113141617",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "lawyer",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

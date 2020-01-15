@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "lawyerId",
+            "otherEntityName": "lawyer",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "booking"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "bookingId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "bookingName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paymentApproved",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20200114022431",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "booking",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}
